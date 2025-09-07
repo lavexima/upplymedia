@@ -13,7 +13,9 @@ function SiteHeader() {
     <header className="sticky top-0 z-50 backdrop-blur border-none rounded-full w-50 py-5 px-4">
       <nav className="container mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 border-slate-900 rounded-full border shadow-xl border-gray-800">
         <div className="flex items-center h-16 mt-3">
-          <Image src="/upply.png" alt="Logo" width={140} height={64} priority />
+          <Image src="/upply.png" alt="Logo" width={140} height={64} priority onClick={()=> {
+            window.location.href = '/';
+          }}/>
         </div>
 
         {/* Masaüstü menü (değişmedi) */}
